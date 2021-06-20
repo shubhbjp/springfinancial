@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Spring Financial Assignment</title>
+	<style type="text/css">
+		.container{border:1px solid #9e9e9ebf;padding:10px;margin:10px}.participant{position:relative;display:block;margin:10px;}.atn-btn{display:inline-block;position:relative;width:15px;border:1px solid #000;padding:5px;border-radius:5px;margin-right:10px}.name{display:inline-block;position:relative;max-width:100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:700;margin-right:10px;}.add-user-btn{margin-bottom:0;display:block;position:relative;text-align:right}.new-user{border:1px solid #000;padding:5px;border-radius:5px;display:inline-block;position:relative}.new-user:hover{cursor:pointer}.new-user-data-field{margin-right:2px;display:inline-block;position:relative}.new-user-label{width:10px}.new-user-ip-name{width:100px}.new-user-ip-age{width:30px}.new-user-ip-address{width:100px;height:50px}
+	</style>
+	<script src="index.js"></script>
+</head>
+<body onload="load()">
+	<center class="container">
+		<div id="participant-container"></div>
+		<div class="add-user-btn"><span class="new-user">+Add User</span></div>
+	</center>
+	<center>
+		<div class="new-user-data">
+			<div class="new-user-data-field">
+				<label class="new-user-label">Name:</label><input type="text" name="name" class="new-user-ip-name" value = "">
+			</div>
+			<div class="new-user-data-field">
+				<label class="new-user-label">Age:</label><input type="number" name="age" class="new-user-ip-age" value="">
+			</div>
+			<div class="new-user-data-field">
+				<label class="new-user-label">Address:</label><textarea name="address" class="new-user-ip-address" value=""></textarea>
+			</div>
+
+			<div class="new-user save">Save</div>
+			<div class="new-user cancel">Cancel</div>
+		</div>
+	</center>
+	<center>
+		<div class="show-data"></div>
+	</center>
+</body>
+</html>
